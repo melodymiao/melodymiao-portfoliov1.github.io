@@ -1,107 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="portfoliostyles.css">
-  <title>Personal Portfolio Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Miao</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+    
 </head>
-
 <body>
-  <!-- PAGE ABOUT -->
-  <header id="about">
-    <nav id="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="welcome-section" class="container">
-      <p class="greeting">Hello, I'm</p>
-      <h1 id="title">Melody Miao</h1>
-      <p class="lead"><em>Junior studying Cog Sci & Data Sci @ UC Berkeley</em></p>
-    </div>
-  </header>
-
-  <!-- PROJECT SECTION -->
-  <section id="projects">
-    <div class="project-tile">
-      <h1 id="caption">Projects</h1><br>
-      <div id="bottom-line"></div>
-      <div class="projects">
-        <div class="box">
-          <a target="_blank" href="/project1.html">
-            <img src="/assets/img/1.png" alt="project-img" class="project-img">
-            <p>
-              Dolci Mango
-            </p>
-          </a>
-        </div>
-
-        <div target="_blank" class="box">
-          <a target="_blank" href="/project2.html">
-            <img src="/assets/img/2.png" alt="project-img" class="project-img">
-            <p>
-              Checkt
-            </p>
-          </a>
-        </div>
-
-        <div target="_blank" class="box">
-          <a target="_blank" href="/project3.html">
-            <img src="/assets/img/3.png" alt="project-img" class="project-img">
-            <p>
-              Berkeley Recreation & Wellbeing
-            </p>
-          </a>
-        </div>
-
-        <div target="_blank" class="box">
-          <a target="_blank" href="/project4.html">
-            <img src="/assets/img/4.png" alt="project-img" class="project-img">
-            <p>
-              Korean Performance Group
-            </p>
-          </a>
-        </div>
-    </div>
-
-      <a href="https://github.com/FreeCodeCamp-Solutions" class="btn">Resume</a>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact">
     <div class="container">
-      <h1>Let's get in touch</h1>
-      <div class="social">
-        <div>
-          <a target="_blank" href="https://www.facebook.com/secure.afif">
-            <i class="fab fa-facebook fa-1x"></i>
-          </a>
-          <a target="_blank" href="https://www.instagram.com/mxlodymeow/">
-            <i class="fab fa-instagram fa-1x"></i>
-          </a>
-          <a href="mailto:melodymiao001@gmail.com">
-            <i class="fas fa-envelope-open-text fa-1x"></i>
-          </a>
-          <a href="tel:8582806221">
-            <i class="fas fa-phone fa-1x"></i>
-          </a>
-        </div>
+      <div class="sidebar">
+        <div id="sidebar-circle-1" class="sidebar-circle" href="#landing-page" onclick="scrollToSection('landing-page')"></div>
+        <div id="sidebar-circle-2" class="sidebar-circle" href="#resume-page" onclick="scrollToSection('resume-page')"></div>
+        <div id="sidebar-circle-3" class="sidebar-circle" href="#gallery-page" onclick="scrollToSection('gallery-page')"></div>
       </div>
-    </div>
-  </section>
+      
 
-  <!-- FOOTER SECTION -->
-  <footer id="main-footer">
-    <div class="container">
-      <p>&copy; Designed and coded by me!</p>
+        <section id="landing-page" class="sections">
+            <div id="title">
+                <a href="#landing-page" onclick="scrollToSection('landing-page')" id="title-1">POR</a>
+                <a href="#resume-page" onclick="scrollToSection('resume-page')" id="title-2">TFO</a>
+                <a href="#gallery-page" onclick="scrollToSection('gallery-page')" id="title-3">LIO</a>
+            </div>
+            <h2 id="name">Melody Miao</h2>
+        </section>
+
+        <section id="resume-page" class="sections">
+            <div id="resume">
+                <div class="column" id="column-1">
+                    <h1 id="title">Melody Miao</h1>
+                    <div id="majors">
+                        <p class="resume-text">Cognitive Science + Data Science</p>
+                        <p class="resume-text">@ UC Berkeley</p>
+                    </div>
+    
+                    <h2 class="subtitle">Contact</h2>
+                    <p class="resume-text" id="email">melodymiao001@gmail.com</p>
+    
+                    <!-- Insert resume download link here-->
+                    <div id="resume-button">
+                        <a href="./assets/documents/Melody Miao - Resume.pdf" target="_blank">Download Full Resume</a>
+                    </div>
+                </div>
+    
+                <div class="column" id="column-2">
+                    <div class="mini-section">
+                        <h2 class="subtitle">About</h2>
+                        <p class="resume-text">Aspiring UX designer with a goal to create impactful user experiences for others. 
+                            Looking for opportunities to apply previous design and development experience 
+                            to help others through a UX design role.</p>
+                    </div>
+                    
+                    <div class="mini-section">
+                        <h2 class="subtitle">Experience</h2>
+                        <div class="experience">
+                            <h3 class="experience-name">Web Gold Team Lead + VP of Technology</h3>
+                            <p class="experience-description">UC Berkeley Innovative Design | 2023-present</p>
+                        </div>
+                        <div class="experience">
+                            <h3 class="experience-name">Intro to UI/UX Design Workshop Leader</h3>
+                            <p class="experience-description">UC Berkeley Innovative Design | 2023</p>
+                        </div>
+                        <div class="experience">
+                            <h3 class="experience-name">Communications Associate (Design)</h3>
+                            <p class="experience-description">UC Berkeley Recreation & Wellbeing | 2023-present</p>
+                        </div>
+                        <div class="experience">
+                            <h3 class="experience-name">Vice Exec + Director + Video Editor</h3>
+                            <p class="experience-description">Korean Performance Group | 2021-present</p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="column" id="column-3">
+                    <div class="mini-section">
+                        <h2 class="subtitle">Languages</h2>
+                        <div class="list">
+                            <p class="resume-text">English</p>
+                            <p class="resume-text">Cantonese</p>
+                            <p class="resume-text">Mandarin</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mini-section">
+                        <h2 class="subtitle">Technical Skills</h2>
+                        <div class="list">
+                            <p class="resume-text">Figma</p>
+                            <p class="resume-text">HTML/CSS/JavaScript</p>
+                            <p class="resume-text">Python/Java</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mini-section">
+                        <h2 class="subtitle">Education</h2>
+                        <div class="list">
+                            <p class="resume-text">Web Design</p>
+                            <p class="resume-text">Full Stack Web Development</p>
+                            <p class="resume-text">Intro to Figma</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-page" class="sections">
+            <div class="projects">
+                <div class="box">
+                    <a target="_blank" href="./project1.html">
+                    <img src="./assets/images/project-1.png" alt="project-img" class="project-img">
+                    <p class="modal-title">
+                        MESKIE'S
+                    </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./project2.html">
+                      <img src="./assets/images/project-2.png" alt="project-img" class="project-img">
+                      <p>
+                        DOLCI MANGO
+                      </p>
+                    </a>
+                </div>
+
+                <div class="box">
+                  <a target="_blank" href="./project3.html">
+                    <img src="./assets/images/project-3.png" alt="project-img" class="project-img">
+                    <p>
+                      CHECKT
+                    </p>
+                  </a>
+                </div>
+        
+                <div target="_blank" class="box">
+                  <a target="_blank" href="./project4.html">
+                    <img src="./assets/images/project-4.png" alt="project-img" class="project-img">
+                    <p>
+                      MOODTUNES
+                    </p>
+                  </a>
+                </div>
+        
+                <div target="_blank" class="box">
+                  <a target="_blank" href="./project5.html">
+                    <img src="./assets/images/project-5.png" alt="project-img" class="project-img">
+                    <p>
+                      BERKELEY RECWELL
+                    </p>
+                  </a>
+                </div>
+        
+                <div target="_blank" class="box">
+                  <a target="_blank" href="./project6.html">
+                    <img src="./assets/images/project-6.png" alt="project-img" class="project-img">
+                    <p>
+                      KPG CAL
+                    </p>
+                  </a>
+                </div>
+            </div>
+        </section>
     </div>
-  </footer>
+
+    <div class="gradient-bg">
+        <div class="gradients-container">
+          <div class="gradient1"></div>
+          <div class="gradient2"></div>
+          <div class="gradient3"></div>
+          <div class="gradient4"></div>
+          <div class="gradient5"></div>
+        </div>
+    </div>
+
+    <script src="./assets/script/script.js"></script>
+
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
