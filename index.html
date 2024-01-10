@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-      <div class="sidebar">
+      <div class="scroll-indicator" class="sidebar">
         <div id="sidebar-circle-1" class="sidebar-circle" href="#landing-page" onclick="scrollToSection('landing-page')"></div>
         <div id="sidebar-circle-2" class="sidebar-circle" href="#resume-page" onclick="scrollToSection('resume-page')"></div>
         <div id="sidebar-circle-3" class="sidebar-circle" href="#gallery-page" onclick="scrollToSection('gallery-page')"></div>
@@ -18,9 +18,9 @@
 
         <section id="landing-page" class="sections">
             <div id="title">
-                <a href="#landing-page" onclick="scrollToSection('landing-page')" id="title-1">POR</a>
-                <a href="#resume-page" onclick="scrollToSection('resume-page')" id="title-2">TFO</a>
-                <a href="#gallery-page" onclick="scrollToSection('gallery-page')" id="title-3">LIO</a>
+                <a id="title-1">POR</a>
+                <a id="title-2">TFO</a>
+                <a id="title-3">LIO</a>
             </div>
             <h2 id="name">Melody Miao</h2>
         </section>
@@ -54,7 +54,7 @@
                     <div class="mini-section">
                         <h2 class="subtitle">Experience</h2>
                         <div class="experience">
-                            <h3 class="experience-name">Web Gold Team Lead + VP of Technology</h3>
+                            <h3 class="experience-name">VP of Technology & Web Gold Team Lead</h3>
                             <p class="experience-description">UC Berkeley Innovative Design | 2023-present</p>
                         </div>
                         <div class="experience">
@@ -66,7 +66,7 @@
                             <p class="experience-description">UC Berkeley Recreation & Wellbeing | 2023-present</p>
                         </div>
                         <div class="experience">
-                            <h3 class="experience-name">Vice Exec + Director + Video Editor</h3>
+                            <h3 class="experience-name">Vice Exec + Director + Videographer/Editor</h3>
                             <p class="experience-description">Korean Performance Group | 2021-present</p>
                         </div>
                     </div>
@@ -95,8 +95,8 @@
                     <div class="mini-section">
                         <h2 class="subtitle">Education</h2>
                         <div class="list">
-                            <p class="resume-text">Web Design</p>
                             <p class="resume-text">Full Stack Web Development</p>
+                            <p class="resume-text">Web Design</p>
                             <p class="resume-text">Intro to Figma</p>
                         </div>
                     </div>
@@ -107,34 +107,37 @@
 
         <section id="gallery-page" class="sections">
             <div class="projects">
+
                 <div class="box">
-                    <a target="_blank" href="./project1.html">
+                  <a href="./dolcimango.html">
+                    <img src="./assets/images/project-2.png" alt="project-img" class="project-img">
+                    <p>
+                      DOLCI MANGO
+                    </p>
+                  </a>
+              </div>
+
+              <div class="box">
+                <a href="./checkt.html">
+                  <img src="./assets/images/project-3.png" alt="project-img" class="project-img">
+                  <p>
+                    CHECKT
+                  </p>
+                </a>
+              </div>
+
+                <div class="box">
+                    <a href="./meskies.html">
                     <img src="./assets/images/project-1.png" alt="project-img" class="project-img">
                     <p class="modal-title">
                         MESKIE'S
                     </p>
                     </a>
                 </div>
-                <div class="box">
-                    <a target="_blank" href="./project2.html">
-                      <img src="./assets/images/project-2.png" alt="project-img" class="project-img">
-                      <p>
-                        DOLCI MANGO
-                      </p>
-                    </a>
-                </div>
 
-                <div class="box">
-                  <a target="_blank" href="./project3.html">
-                    <img src="./assets/images/project-3.png" alt="project-img" class="project-img">
-                    <p>
-                      CHECKT
-                    </p>
-                  </a>
-                </div>
         
-                <div target="_blank" class="box">
-                  <a target="_blank" href="./project4.html">
+                <div class="box">
+                  <a href="./moodtunes.html">
                     <img src="./assets/images/project-4.png" alt="project-img" class="project-img">
                     <p>
                       MOODTUNES
@@ -142,8 +145,8 @@
                   </a>
                 </div>
         
-                <div target="_blank" class="box">
-                  <a target="_blank" href="./project5.html">
+                <div class="box">
+                  <a href="./recwell.html">
                     <img src="./assets/images/project-5.png" alt="project-img" class="project-img">
                     <p>
                       BERKELEY RECWELL
@@ -151,8 +154,8 @@
                   </a>
                 </div>
         
-                <div target="_blank" class="box">
-                  <a target="_blank" href="./project6.html">
+                <div class="box">
+                  <a href="./kpg.html">
                     <img src="./assets/images/project-6.png" alt="project-img" class="project-img">
                     <p>
                       KPG CAL

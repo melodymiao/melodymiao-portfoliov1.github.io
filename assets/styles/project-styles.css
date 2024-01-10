@@ -12,6 +12,46 @@
     padding-bottom: 88px;
 }
 
+.home-button {
+    width: 40px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    transition: transform 0.3s ease;
+}
+
+.home-button:hover {
+    transform: translateY(-5px);
+}
+
+.previous-button {
+    position: fixed;
+    bottom: -60px;
+    left: 0px;
+    font-size: 24px;
+    color:#FFF;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.previous-button:hover {
+    transform: translateY(-5px);
+}
+
+.next-button {
+    position: fixed;
+    bottom: -60px;
+    right: 0px;
+    font-size: 24px;
+    color:#FFF;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.next-button:hover {
+    transform: translateY(-5px);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -94,7 +134,13 @@ body {
 }
 
 .description {
-    padding-bottom: 64px;
+    padding-bottom: 36px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 36px;
 }
 
 .project-text {
@@ -114,6 +160,11 @@ body {
 
 .section {
     padding-bottom: 48px;
+}
+
+.list {
+    margin-left: 40px;
+    padding-bottom: 32px;
 }
 
 .images {
@@ -159,6 +210,19 @@ body {
     justify-content: center;
 }
 
+.four-by-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 50%;
+    padding-bottom: 42px;
+    justify-content: center;
+}
+
+.one-small-design {
+    width: 175px;
+}
+
 .one-design {
     width: 350px;
 }
@@ -167,12 +231,16 @@ body {
     width: 720px;
 }
 
-.two-designs, .four-designs {
+.two-designs {
     width: 350px;
 }
 
 .three-designs {
     width: 230px;
+}
+
+.four-designs {
+    width: 168px;
 }
 
 .final-design {
